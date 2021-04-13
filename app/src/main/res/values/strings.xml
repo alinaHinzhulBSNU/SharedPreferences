@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SharedPreferences</string>
+    <string name="title">Shared Preferences</string>
+    <string name="hint_input">Input some text...</string>
+    <string name="hint_save_button">Save</string>
+    <string name="hint_load_button">Load</string>
+</resources>
