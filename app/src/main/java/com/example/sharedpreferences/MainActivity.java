@@ -58,12 +58,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Не записувати пусті рядки
         if(!inputValue.trim().isEmpty()){
+            input.setError(null);
+
             editor.putString(SAVED_TEXT, inputValue);
             editor.apply();
 
             Toast.makeText(MainActivity.this, "Text saved!", Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(MainActivity.this, "Input is empty!", Toast.LENGTH_LONG).show();
+            input.setError("Input is empty!");
         }
     }
 
